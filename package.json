@@ -47,5 +47,8 @@
     "webpack-core": "^0.6.9",
     "webpack-dev-server": "^2.4.1"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "yarn": "^1.1.0"
+  }
 }

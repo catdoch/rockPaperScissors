@@ -1,5 +1,5 @@
 require('../css/main.scss');
 
-import print from './module';
+import userChoice from './module';
 
-print('it works well!');
+userChoice();

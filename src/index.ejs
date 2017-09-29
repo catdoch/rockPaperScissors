@@ -5,8 +5,27 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-	<h1>you are ready to go! :)</h1>
+	<h1>Let's play rock paper scissors!</h1>
+	<div class="c-choice__container">
+		<p class="c-choice__heading">Pick a choice</p>
+		<div class="c-choice__choices">
+			<h4 class="c-choice__item" id="rock">Rock</h4>
+			<h4 class="c-choice__item" id="paper">Paper</h4>
+			<h4 class="c-choice__item" id="scissors">Scissors</h4>
+		</div>
+	</div>
+	<div class="c-choice__spacer">
+		<p class="versus">Vs</p>
+	</div>
+	<div class="c-choice__container">
+		<p class="c-choice__heading">Computer chooses...</p>
+		<div class="c-choice__item" id="computerOutput"></div>
+	</div>
+	<button class="c-button__go c-button" id="computerButton">Go</button>
+	<button class="c-button__reset c-button" id="resetButton">Reset</button>
+	<div id="winnerOutput"></div>
 </body>
 </html>
