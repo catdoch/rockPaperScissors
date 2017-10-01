@@ -7,22 +7,24 @@ body {
 	height: 100%;
 	margin: 0;
 	background: #BFD8D2;
-	h1 {
-		color: #DF744A;
-		text-align: center;
-		padding: 1.5em 0;
-	}
-}
-
-#winnerOutput {
-	text-align: center;
-    margin-top: 1.5em;
-    font-size: 2.25em;
-    color: #535353;
-    background: #efabb7;
 }
 
 .c-choice {
+	&__title {
+		color: #DF744A;
+		text-align: center;
+		margin: 0;
+		padding: 1.5em 0;
+		font-size: 1.75em;
+	}
+	&__winner {
+		text-align: center;
+	    margin-bottom: 0.75em;
+	    font-size: 2.25em;
+	    color: #535353;
+	    background: #efabb7;
+	}
+
 	&__spacer {
 		width: 18%;
 		display: inline-block;
@@ -80,6 +82,43 @@ body {
 		&:hover {
 	    	background: #FEDCD2;
 	    }
+	}
+
+	&__computer {
+		display: block;
+		border: 1px solid #FEDCD2;
+		margin-bottom: 1.5em;
+		&:hover {
+	    	background: #FEDCD2;
+	    }
+	}
+}
+
+@media (max-width: 500px) {
+	.c-button {
+		padding: 0.75em;
+		&__reset {
+			margin-top: 2em;
+		}
+	}
+	.c-choice {
+		&__title {
+			font-size: 1.25em;
+			margin: 0.75em 0;
+			padding: 0.75em 0;
+		}
+		&__spacer {
+			width: 17%;
+		}
+		&__heading {
+			font-size: 1em;
+		}
+		&__item {
+			font-size: 1em;
+		}
+	}
+	#winnerOutput {
+		font-size: 1.25em;
 	}
 }
 

@@ -1,5 +1,5 @@
 require('../css/main.scss');
 
-import userChoice from './module';
+import startPlay from './module';
 
-userChoice();
+startPlay();
