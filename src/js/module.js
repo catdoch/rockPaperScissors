@@ -33,7 +33,7 @@ function userChoice() {
  * randomise response
  * @return random option
  */
-function returnOption() {
+export function returnOption() {
 	const options = ['rock', 'paper', 'scissors'];
 	let pickedOption = options[Math.floor(Math.random() * options.length)];
 
@@ -70,15 +70,16 @@ function computerPlay() {
  * from option
  * @return remove class from nodes
  */
-function resetPlayer1Choice() {
+export function resetPlayer1Choice() {
 	const choices = document.querySelector('.c-choice__choices');
+	const player1Output = document.getElementById('player1Output');
 
 	for (var i = 0; i < choices.children.length; i++) {
 		choices.children[i].classList.remove('selected');
 	}
 
-	document.querySelector('.c-choice__choices').style.display = 'block';
-	document.getElementById('player1Output').innerText = '';
+	choices.style.display = 'block';
+	player1Output.innerText = '';
 }
 
 
