@@ -45,7 +45,7 @@
     "style-loader": "^0.13.1",
     "webpack": "^2.2.1",
     "webpack-core": "^0.6.9",
-    "webpack-dev-server": "^2.4.1"
+    "webpack-dev-server": "^3.0.0"
   },
   "license": "UNLICENSED",
   "dependencies": {
